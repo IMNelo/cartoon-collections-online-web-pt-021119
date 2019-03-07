@@ -15,8 +15,11 @@ end
 def find_the_cheese(array)
   # the array below is here to help
   cheese_types = ["cheddar", "gouda", "camembert"]
-  if array.find("cheddar", "gouda", "camembert")
-else
+  array.map do |cheese|
+  if array == cheese
+    puts cheese
+  else
   nil
 end 
+end
 end
